@@ -1,3 +1,35 @@
 <div class="CHARACTER_UI">
-  
+  <tabs class="flexrow flexaround fit-x size4" tab-category='main-tab' tab-selected="alttext flexmiddle lrpadding smooth"
+    tab-selected-style="height: 40px; width:100px; font-family:'abel'; font-size:12pt; text-transform:uppercase "
+    ;'>
+    <tab class='flexmiddle link lrpadding cstab' primary="true">front</tab>
+    <tab class='flexmiddle link lrpadding cstab'>attr</tab>
+    <tab class='flexmiddle link lrpadding cstab'>combat</tab>
+    <tab class='flexmiddle link lrpadding cstab'>skills</tab>
+    <tab class='flexmiddle link lrpadding cstab'>encumberance</tab>
+    <tab class='flexmiddle link lrpadding cstab'>inventory</tab>
+    <tab class='flexmiddle link lrpadding cstab'>wealth</tab>
+    <tab class='flexmiddle link lrpadding cstab'>spells</tab>
+  </tabs>
+  <div main-tab='front'>
+      <ui name="CHAR_TAB_FRONT" />
+  </div>
+  <div main-tab="inventory">
+      <ui name="CHAR_TAB_INVENTORY" />
+  </div>
+  <div main-tab="wealth">
+      <ui name="CHAR_TAB_WEALTH	" />
+  </div>
+  <div main-tab="encumberance">
+      <ui name="CHAR_TAB_ENCUMBERANCE" />
+  </div>
+  <div main-tab="attr">
+      <ui name="CHAR_TAB_ATTR" />
+  </div>
+  <div main-tab="combat">
+      <ui name='CHAR_TAB_COMBAT'></ui>
+  </div>
+  <div main-tab="spells">
+      <ui name="CHAR_TAB_SPELLS"></ui>
+  </div>
 </div>

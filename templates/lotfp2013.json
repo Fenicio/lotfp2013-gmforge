@@ -77,25 +77,22 @@
     },
     "elements": {
       "Armor": {
-        "content": "<ui name='FTC_RENDER_ELEMENT'/>"
+        "content": "<ui name='FTC_RENDER_ELEMENT_ARMOR'/>"
       },
       "Consumable": {
-        "content": "<ui name='FTC_RENDER_ELEMENT'/>"
-      },
-      "Feat": {
-        "content": "<ui name='FTC_RENDER_ELEMENT'/>"
+        "content": "<ui name='FTC_RENDER_ELEMENT_CONSUMABLE'/>"
       },
       "Item": {
-        "content": "<ui name='FTC_RENDER_ELEMENT'/>"
+        "content": "<ui name='FTC_RENDER_ELEMENT_ITEM'/>"
       },
       "Spell": {
-        "content": "<ui name='FTC_RENDER_ELEMENT'/>"
+        "content": "<ui name='FTC_RENDER_ELEMENT_SPELL'/>"
       },
-      "Tool": {
-        "content": "<ui name='FTC_RENDER_ELEMENT'/>"
+      "ChargedItem": {
+        "content": "<ui name='FTC_RENDER_ELEMENT_ITEM_CHARGED'/>"
       },
       "Weapon": {
-        "content": "<ui name='FTC_RENDER_ELEMENT'/>"
+        "content": "<ui name='FTC_RENDER_ELEMENT_WEAPON'/>"
       }
     }
   },
@@ -109,6 +106,21 @@
           "calc": [
             {
               "eq": "@c.attributes.hp.current-(@total)_0",
+              "target": "attributes.hp"
+            }
+          ]
+        }
+      }
+    },
+    "heal": {
+      "name": "Heal Damage",
+      "submenu": {
+        "x1": {
+          "name": "Normal",
+          "msg": "@pName : Healed @total damage",
+          "calc": [
+            {
+              "eq": "@c.attributes.hp.current+(@total)_0",
               "target": "attributes.hp"
             }
           ]
