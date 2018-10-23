@@ -1,136 +1,285 @@
 {
-  "info": {
-    "name": {
-      "current": "Lamentations of the Flame Princess - WEIRD FANTASY Role-Playing"
-    },
-    "img": {
-      "current": "content/logo.jpg"
-    }
-  },
-  "identifier": "lotfp_2013",
-  "build": "v2",
-  "version": 1,
-  "initiative": {
-    "query": "d6",
-    "compare": "(@i1.total>@i2.total)?(1):(@i1.total==@i2.total?(0):(-1))"
-  },
-  "actors": {
-    "character": {},
-    "npc": {},
-    "retainer": {}
-  },
-  "elements": {
-    "item": {},
-    "spell": {},
-    "weapon": {},
-    "armor": {},
-    "feat": {},
-    "tool": {},
-    "consumable": {}
-  },
-  "page": {},
-  "security": {
-    "player": {
-      "Game Master": 1,
-      "Assistant Master": 2,
-      "Trusted Player": 3,
-      "Player": 4,
-      "Spectator": 5
-    },
-    "object": {
-      "Default Access": 0,
-      "Owner": 1,
-      "Rights": 2,
-      "Visible": 3,
-      "Deny": 4
-    }
-  },
-  "constants": {},
-  "tables": {},
-  "tags": {},
-  "dice": {
-    "defaults": ["d20", "d12", "d10", "d8", "d6", "d4"],
-    "pool": {
-      "d4": {"value": "d4"},
-      "d6": {"value": "d6"},
-      "d8": {"value": "d8"},
-      "d10": {"value": "d10"},
-      "d12": {"value": "d12"},
-      "d20": {"value": "d20"},
-      "d100": {"value": "d100"}
-    }
-  },
-  "display": {
-    "actors": {
-      "character": {
-        "content": "<ui name='LOTFP_RENDER_CHARACTER_UI'/>",
-        "health": "attributes.hp"
-      },
-      "npc": {
-        "content": "<ui name='LOTFP_RENDER_NPC_UI'>",
-        "health": "attributes.hp"
-      },
-      "retainer": {
-        "content": "<ui name='LOTFP_RENDER_RETAINER_UI'>",
-        "health": "attributes.hp"
-      }
-    },
-    "elements": {
-      "Armor": {
-        "content": "<ui name='LOTFP_RENDER_ELEMENT_ARMOR'/>"
-      },
-      "Consumable": {
-        "content": "<ui name='LOTFP_RENDER_ELEMENT_CONSUMABLE'/>"
-      },
-      "Item": {
-        "content": "<ui name='LOTFP_RENDER_ELEMENT_ITEM'/>"
-      },
-      "Spell": {
-        "content": "<ui name='LOTFP_RENDER_ELEMENT_SPELL'/>"
-      },
-      "ChargedItem": {
-        "content": "<ui name='LOTFP_RENDER_ELEMENT_ITEM_CHARGED'/>"
-      },
-      "Weapon": {
-        "content": "<ui name='LOTFP_RENDER_ELEMENT_WEAPON'/>"
-      }
-    }
-  },
-  "effects": {
-    "dmg": {
-      "name": "Take Damage",
-      "submenu": {
-        "x1": {
-          "name": "Normal",
-          "msg": "@pName : Applied @total damage",
-          "calc": [
-            {
-              "eq": "@c.attributes.hp.current-(@total)_0",
-              "target": "attributes.hp"
-            }
-          ]
-        }
-      }
-    },
-    "heal": {
-      "name": "Heal Damage",
-      "submenu": {
-        "x1": {
-          "name": "Normal",
-          "msg": "@pName : Healed @total damage",
-          "calc": [
-            {
-              "eq": "@c.attributes.hp.current+(@total)_0",
-              "target": "attributes.hp"
-            }
-          ]
-        }
-      }
-    }
-  },
-  "grid": {
-    "unitScale": 5,
-    "unit": "ft"
-  },
-  "actions": {}
+	"info": {
+		"name": {
+			"current": "Lamentations of the Flame Princess - WEIRD FANTASY Role-Playing"
+		},
+		"img": {
+			"current": "content/logo.jpg"
+		}
+	},
+	"identifier": "lotfp_2013",
+	"build": "v2",
+	"version": 1,
+	"initiative": {
+		"query": "d6",
+		"compare": "(@i1.total>@i2.total)?(1):(@i1.total==@i2.total?(0):(-1))"
+	},
+	"actors": {
+		"character": {
+			"_t": "c",
+			"_type": "Character",
+			 "info": {
+				"name": {
+					"name": "Name",
+					"current": "Default Character"
+				},
+				"img": {
+					"name": "Character Art"
+				},
+				"notes": {
+					"name": "Character Notes"
+				},
+			},
+			"stats": {
+				"str":{
+					"name": "Strengh",
+					"current": 0,
+					"min": 0,
+					"max": 20
+				},
+				"dex":{
+					"name": "Dexterity",
+					"current": 0,
+					"min": 0,
+					"max": 20
+				},
+				"con":{
+					"name": "Constitution",
+					"current": 0,
+					"min": 0,
+					"max": 20
+				},
+				"int":{
+					"name": "Intelligence",
+					"current": 0,
+					"min": 0,
+					"max": 20
+				},
+				"wis":{
+					"name": "Wisdom",
+					"current": 0,
+					"min": 0,
+					"max": 20
+				},
+				"cha":{
+					"name": "Charisma",
+					"current": 0,
+					"min": 0,
+					"max": 20
+				}
+			},
+			"saves": {
+				"paralyze":{
+					"name": "Paralyze",
+					"current": 17,
+					"min": 0,
+					"max": 20
+				},
+				"poison":{
+					"name": "Poison",
+					"current": 17,
+					"min": 0,
+					"max": 20
+				},
+				"breath":{
+					"name": "Breath",
+					"current": 17,
+					"min": 0,
+					"max": 20
+				},
+				"device":{
+					"name": "Device",
+					"current": 17,
+					"min": 0,
+					"max": 20
+				},
+				"magic":{
+					"name": "Magic",
+					"current": 17,
+					"min": 0,
+					"max": 20
+				}
+			},
+			"skills": {
+				"architecture":{
+					"name": "Architecture",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"climbing":{
+					"name": "Climbing",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"bushcraft":{
+					"name": "Bushcraft",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"openDoors":{
+					"name": "Open Doors",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"languages":{
+					"name": "Languages",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"search":{
+					"name": "Search",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"sleightOfHand":{
+					"name": "Sleight of Hand",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"sneakAttack":{
+					"name": "Sneak Attack",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"stealth":{
+					"name": "Stealth",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				},
+				"tinkering":{
+					"name": "Tinkering",
+					"current": 1,
+					"min": 0,
+					"max": 6
+				}
+			},
+			"_hud": {},
+			"_flags": {}
+		},
+		"npc": {},
+		"retainer": {}
+	},
+	"elements": {
+		"item": {},
+		"spell": {},
+		"weapon": {},
+		"armor": {},
+		"feat": {},
+		"tool": {},
+		"consumable": {}
+	},
+	"page": {},
+	"security": {
+		"player": {
+			"Game Master": 1,
+			"Assistant Master": 2,
+			"Trusted Player": 3,
+			"Player": 4,
+			"Spectator": 5
+		},
+		"object": {
+			"Default Access": 0,
+			"Owner": 1,
+			"Rights": 2,
+			"Visible": 3,
+			"Deny": 4
+		}
+	},
+	"constants": {},
+	"tables": {},
+	"tags": {},
+	"dice": {
+		"defaults": ["d20", "d12", "d10", "d8", "d6", "d4"],
+		"pool": {
+			"d4": {"value": "d4"},
+			"d6": {"value": "d6"},
+			"d8": {"value": "d8"},
+			"d10": {"value": "d10"},
+			"d12": {"value": "d12"},
+			"d20": {"value": "d20"},
+			"d100": {"value": "d100"}
+		}
+	},
+	"display": {
+		"actors": {
+			"character": {
+				"content": "<ui name='LOTFP_RENDER_CHARACTER_UI'/>",
+				"health": "attributes.hp"
+			},
+			"npc": {
+				"content": "<ui name='LOTFP_RENDER_NPC_UI'>",
+				"health": "attributes.hp"
+			},
+			"retainer": {
+				"content": "<ui name='LOTFP_RENDER_RETAINER_UI'>",
+				"health": "attributes.hp"
+			}
+		},
+		"elements": {
+			"Armor": {
+				"content": "<ui name='LOTFP_RENDER_ELEMENT_ARMOR'/>"
+			},
+			"Consumable": {
+				"content": "<ui name='LOTFP_RENDER_ELEMENT_CONSUMABLE'/>"
+			},
+			"Item": {
+				"content": "<ui name='LOTFP_RENDER_ELEMENT_ITEM'/>"
+			},
+			"Spell": {
+				"content": "<ui name='LOTFP_RENDER_ELEMENT_SPELL'/>"
+			},
+			"ChargedItem": {
+				"content": "<ui name='LOTFP_RENDER_ELEMENT_ITEM_CHARGED'/>"
+			},
+			"Weapon": {
+				"content": "<ui name='LOTFP_RENDER_ELEMENT_WEAPON'/>"
+			}
+		}
+	},
+	"effects": {
+		"dmg": {
+			"name": "Take Damage",
+			"submenu": {
+				"x1": {
+					"name": "Normal",
+					"msg": "@pName : Applied @total damage",
+					"calc": [
+						{
+							"eq": "@c.attributes.hp.current-(@total)_0",
+							"target": "attributes.hp"
+						}
+					]
+				}
+			}
+		},
+		"heal": {
+			"name": "Heal Damage",
+			"submenu": {
+				"x1": {
+					"name": "Normal",
+					"msg": "@pName : Healed @total damage",
+					"calc": [
+						{
+							"eq": "@c.attributes.hp.current+(@total)_0",
+							"target": "attributes.hp"
+						}
+					]
+				}
+			}
+		}
+	},
+	"grid": {
+		"unitScale": 5,
+		"unit": "ft"
+	},
+	"actions": {}
 }
