@@ -1,0 +1,120 @@
+<div className="LOTFP_RENDER_CHAR_TAB_ATTR flex">
+	<div className="flexrow">
+		<input target="attr.cha">
+		CHA
+		<span>
+			bonus
+		</span>
+		<span>
+			Recruitment, Loyalty
+		</span>
+	</div>
+	<div className="flexrow">
+		<input target="attr.con">
+		CON
+		<span>
+			bonus
+		</span>
+		<span>
+			HP, Travel Distance
+		</span>
+	</div>
+	<div className="flexrow">
+		<input target="attr.dex">
+		DEX
+		<span>
+			bonus
+		</span>
+		<span>
+			AC, Ranged AB, Init
+		</span>
+	</div>
+	<div className="flexrow">
+		<input target="attr.int">
+		INT
+		<span>
+			bonus
+		</span>
+		<span>
+			Save Vs Magic, Lang
+		</span>
+	</div>
+	<div className="flexrow">
+		<input target="attr.str">
+		STR
+		<span>
+			bonus
+		</span>
+		<span>
+			Melee AB, Open Doors
+		</span>
+	</div>
+	<div className="flexrow">
+		<input target="attr.wis">
+		WIS
+		<span>
+			bonus
+		</span>
+		<span>
+			Save vs Non-Magic
+		</span>
+	</div>
+	<hr/>
+	<div className="flexrow">
+		<div className="flexcolumn">
+			<div>
+				<input target="save.paralyze">
+			</div>
+			<button>
+				Paralyze
+				<click>
+					<chat text='@c.info.name tried to save against paralyze' flavor='[Flavor Text]' roll='(d20<save.paralyze)?("And he passed"):("And he failed")' />
+				</click>
+			</button>
+		</div>
+		<div className="flexcolumn">
+			<div>
+				<input target="save.poison">
+			</div>
+			<button>
+				poison
+				<click>
+					<chat text='@c.info.name tried to save against poison' flavor='[Flavor Text]' roll='(d20<save.poison)?("And he passed"):("And he failed")' />
+				</click>
+			</button>
+		</div>
+		<div className="flexcolumn">
+			<div>
+				<input target="save.breath">
+			</div>
+			<button>
+				breath
+				<click>
+					<chat text='@c.info.name tried to save against breath' flavor='[Flavor Text]' roll='(d20<save.breath)?("And he passed"):("And he failed")' />
+				</click>
+			</button>
+		</div>
+		<div className="flexcolumn">
+			<div>
+				<input target="save.device">
+			</div>
+			<button>
+				device
+				<click>
+					<chat text='@c.info.name tried to save against device' flavor='[Flavor Text]' roll='(d20<save.device)?("And he passed"):("And he failed")' />
+				</click>
+			</button>
+		</div>
+		<div className="flexcolumn">
+			<div>
+				<input target="save.magic">
+			</div>
+			<button>
+				magic
+				<click>
+					<chat text='@c.info.name tried to save against magic' flavor='[Flavor Text]' roll='(d20<save.magic)?("And he passed"):("And he failed")' />
+				</click>
+			</button>
+		</div>
+	</div>
+</div>

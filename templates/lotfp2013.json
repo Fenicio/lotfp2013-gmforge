@@ -20,13 +20,13 @@
     "retainer": {}
   },
   "elements": {
-    "Item": {},
-    "Spell": {},
-    "Weapon": {},
-    "Armor": {},
-    "Feat": {},
-    "Tool": {},
-    "Consumable": {}
+    "item": {},
+    "spell": {},
+    "weapon": {},
+    "armor": {},
+    "feat": {},
+    "tool": {},
+    "consumable": {}
   },
   "page": {},
   "security": {
