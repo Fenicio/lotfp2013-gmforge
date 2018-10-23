@@ -1,3 +1,3 @@
-sync.render("skill", function(obj, app, scope) {
+/*sync.render("skill", function(obj, app, scope) {
 	
-});
+});*/
