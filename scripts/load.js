@@ -12,22 +12,22 @@ loadTemplate = function(path) {
 }
 
 const templates = {
-	RETAINER_UI: "html/actors/retainer.html",
-	CHARACTER_UI: "html/actors/character.html",
-	NPC_UI: "html/actors/npc.html",
-	FTC_RENDER_ELEMENT_ARMOR: "html/elements/armor.html",
-	FTC_RENDER_ELEMENT_CONSUMABLE: "html/elements/consumable.html",
-	FTC_RENDER_ELEMENT_ITEM: "html/elements/item.html",
-	FTC_RENDER_ELEMENT_SPELL: "html/elements/item_charged.html",
-	FTC_RENDER_ELEMENT_ITEM_CHARGED: "html/elements/spell.html",
-	FTC_RENDER_ELEMENT_WEAPON: "html/elements/weapon.html",
-	CHAR_TAB_FRONT: "html/actos/char_tab_front",
-	CHAR_TAB_INVENTORY: "html/actos/char_tab_inventory",
-	CHAR_TAB_WEALTH: "html/actos/char_tab_wealth",
-	CHAR_TAB_ENCUMBERANCE: "html/actos/char_tab_encumberance",
-	CHAR_TAB_SKILLS: "html/actos/char_tab_skills",
-	CHAR_TAB_ATTR: "html/actos/char_tab_attr",
-	CHAR_TAB_SPELLS: "html/actos/char_tab_spells"
+	LOTFP_RENDER_RETAINER_UI: "html/actors/retainer.html",
+	LOTFP_RENDER_CHARACTER_UI: "html/actors/character.html",
+	LOTFP_RENDER_NPC_UI: "html/actors/npc.html",
+	LOTFP_RENDER_RENDER_ELEMENT_ARMOR: "html/elements/armor.html",
+	LOTFP_RENDER_RENDER_ELEMENT_CONSUMABLE: "html/elements/consumable.html",
+	LOTFP_RENDER_RENDER_ELEMENT_ITEM: "html/elements/item.html",
+	LOTFP_RENDER_RENDER_ELEMENT_SPELL: "html/elements/item_charged.html",
+	LOTFP_RENDER_RENDER_ELEMENT_ITEM_CHARGED: "html/elements/spell.html",
+	LOTFP_RENDER_RENDER_ELEMENT_WEAPON: "html/elements/weapon.html",
+	LOTFP_RENDER_CHAR_TAB_FRONT: "html/actos/char_tab_front.html",
+	LOTFP_RENDER_CHAR_TAB_INVENTORY: "html/actos/char_tab_inventory.html",
+	LOTFP_RENDER_CHAR_TAB_WEALTH: "html/actos/char_tab_wealth.html",
+	LOTFP_RENDER_CHAR_TAB_ENCUMBERANCE: "html/actos/char_tab_encumberance.html",
+	LOTFP_RENDER_CHAR_TAB_SKILLS: "html/actos/char_tab_skills.html",
+	LOTFP_RENDER_CHAR_TAB_ATTR: "html/actos/char_tab_attr.html",
+	LOTFP_RENDER_CHAR_TAB_SPELLS: "html/actos/char_tab_spells.html"
 };
 
 Object.keys(templates).forEach(function (key) {

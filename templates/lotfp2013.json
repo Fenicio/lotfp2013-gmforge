@@ -63,36 +63,36 @@
   "display": {
     "actors": {
       "character": {
-        "content": "<ui name='CHARACTER_UI'/>",
+        "content": "<ui name='LOTFP_RENDER_CHARACTER_UI'/>",
         "health": "attributes.hp"
       },
       "npc": {
-        "content": "<ui name='NPC_UI'>",
+        "content": "<ui name='LOTFP_RENDER_NPC_UI'>",
         "health": "attributes.hp"
       },
       "retainer": {
-        "content": "<ui name='RETAINER_UI'>",
+        "content": "<ui name='LOTFP_RENDER_RETAINER_UI'>",
         "health": "attributes.hp"
       }
     },
     "elements": {
       "Armor": {
-        "content": "<ui name='FTC_RENDER_ELEMENT_ARMOR'/>"
+        "content": "<ui name='LOTFP_RENDER_ELEMENT_ARMOR'/>"
       },
       "Consumable": {
-        "content": "<ui name='FTC_RENDER_ELEMENT_CONSUMABLE'/>"
+        "content": "<ui name='LOTFP_RENDER_ELEMENT_CONSUMABLE'/>"
       },
       "Item": {
-        "content": "<ui name='FTC_RENDER_ELEMENT_ITEM'/>"
+        "content": "<ui name='LOTFP_RENDER_ELEMENT_ITEM'/>"
       },
       "Spell": {
-        "content": "<ui name='FTC_RENDER_ELEMENT_SPELL'/>"
+        "content": "<ui name='LOTFP_RENDER_ELEMENT_SPELL'/>"
       },
       "ChargedItem": {
-        "content": "<ui name='FTC_RENDER_ELEMENT_ITEM_CHARGED'/>"
+        "content": "<ui name='LOTFP_RENDER_ELEMENT_ITEM_CHARGED'/>"
       },
       "Weapon": {
-        "content": "<ui name='FTC_RENDER_ELEMENT_WEAPON'/>"
+        "content": "<ui name='LOTFP_RENDER_ELEMENT_WEAPON'/>"
       }
     }
   },
