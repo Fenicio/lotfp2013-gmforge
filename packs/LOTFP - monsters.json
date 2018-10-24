@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": {
+      "name": "Name",
+      "current": "LOTFP - Monsters"
+    },
+    "img": {
+      "name": "Art",
+      "current": "/content/"
+    },
+    "notes": {
+      "name": "Notes",
+      "current": ""
+    },
+    "mode": {
+      "name": "Mode",
+      "current": ""
+    }
+  },
+  "custom": true,
+  "content": {
+    "Monsters": {
+      "_t": "c",
+      "_type": "npc",
+      "data": [
+      ]
+    }
+  }
+}

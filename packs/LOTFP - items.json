@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": {
+      "name": "Name",
+      "current": "LOTFP - Items"
+    },
+    "img": {
+      "name": "Art",
+      "current": "/content/"
+    },
+    "notes": {
+      "name": "Notes",
+      "current": ""
+    },
+    "mode": {
+      "name": "Mode",
+      "current": ""
+    }
+  },
+  "custom": true,
+  "content": {
+    "Items": {
+      "_t": "i",
+      "data": [
+      ]
+    }
+  }
+}

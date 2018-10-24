@@ -15,7 +15,7 @@ loadTemplate = function(path) {
   HTML_TEMPLATE_CACHE[path] = html;
   return html;
 }
-console.log("LOADING");
+
 const templates = {
   LOTFP_RENDER_RETAINER_UI: "actors/retainer.html",
   LOTFP_RENDER_CHARACTER_UI: "actors/character.html",
@@ -32,18 +32,12 @@ const templates = {
   LOTFP_RENDER_CHAR_TAB_ENCUMBERANCE: "actors/char_tab_encumberance.html",
   LOTFP_RENDER_CHAR_TAB_SKILLS: "actors/char_tab_skills.html",
   LOTFP_RENDER_CHAR_TAB_ATTR: "actors/char_tab_attr.html",
-  LOTFP_RENDER_CHAR_TAB_SPELLS: "actors/char_tab_spells.html"
+  LOTFP_RENDER_CHAR_TAB_SPELLS: "actors/char_tab_spells.html",
+  LOTFP_RENDER_CHAR_TAB_COMBAT: "actors/char_tab_combat.html"
 };
 
 Object.keys(templates).forEach(function (key) {
-  console.log('key', key);
-  
-  console.log('TEMPLATE_DIR + loadTemplate(templates[key]', loadTemplate(TEMPLATE_DIR + templates[key]));
-  console.log("sync", sync);
   sync.render(key, function(obj, app, scope) {
-    console.log('obj', obj);
-    console.log('app', app);
-    console.log('scope', scope);
     return sync.render("ui_processUI")(obj, app, {display: loadTemplate(TEMPLATE_DIR + templates[key])});
   });
 });

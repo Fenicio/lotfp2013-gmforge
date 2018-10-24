@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": {
+      "name": "Name",
+      "current": "LOTFP - Retainers"
+    },
+    "img": {
+      "name": "Art",
+      "current": "/content/"
+    },
+    "notes": {
+      "name": "Notes",
+      "current": ""
+    },
+    "mode": {
+      "name": "Mode",
+      "current": ""
+    }
+  },
+  "custom": true,
+  "content": {
+    "Retainers": {
+      "_t": "c",
+      "_type": "retainer",
+      "data": [
+      ]
+    }
+  }
+}

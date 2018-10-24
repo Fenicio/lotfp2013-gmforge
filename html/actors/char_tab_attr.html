@@ -8,6 +8,11 @@
 		<span>
 			Recruitment, Loyalty
 		</span>
+		<span class="glyphicon glyphicon-pencil lightoutline hover2" style="padding: 2px;">
+                <click>
+                  <change target='stats.cha'/>
+                </click>
+              </span>
 	</div>
 	<div className="flexrow">
 		<input target="stats.con">
@@ -68,7 +73,8 @@
 			<button>
 				Paralyze
 				<click>
-					<chat text='@c.info.name tried to save against paralyze' flavor='[Flavor Text]' roll='(d20<save.paralyze)?("And he passed"):("And he failed")' />
+					<chat text='@c.info.name tried to save against paralyze' flavor='@c.info.name tried to save against paralyze' roll='d20' />
+					<var threshold="@save.paralyze"/>
 				</click>
 			</button>
 		</div>
@@ -79,7 +85,7 @@
 			<button>
 				poison
 				<click>
-					<chat text='@c.info.name tried to save against poison' flavor='[Flavor Text]' roll='(d20<save.poison)?("And he passed"):("And he failed")' />
+					<chat text='@c.info.name tried to save against poison' flavor='@c.info.name tried to save against poison' roll='d20' />
 				</click>
 			</button>
 		</div>
@@ -90,7 +96,7 @@
 			<button>
 				breath
 				<click>
-					<chat text='@c.info.name tried to save against breath' flavor='[Flavor Text]' roll='(d20<save.breath)?("And he passed"):("And he failed")' />
+					<chat text='@c.info.name tried to save against breath' flavor='@c.info.name tried to save against breath' roll='d20' />
 				</click>
 			</button>
 		</div>
@@ -101,7 +107,7 @@
 			<button>
 				device
 				<click>
-					<chat text='@c.info.name tried to save against device' flavor='[Flavor Text]' roll='(d20<save.device)?("And he passed"):("And he failed")' />
+					<chat text='@c.info.name tried to save against device' flavor='@c.info.name tried to save against device' roll='d20' />
 				</click>
 			</button>
 		</div>
@@ -112,7 +118,7 @@
 			<button>
 				magic
 				<click>
-					<chat text='@c.info.name tried to save against magic' flavor='[Flavor Text]' roll='(d20<save.magic)?("And he passed"):("And he failed")' />
+					<chat text='@c.info.name tried to save against magic' flavor='@c.info.name tried to save against magic' roll='d20' />
 				</click>
 			</button>
 		</div>

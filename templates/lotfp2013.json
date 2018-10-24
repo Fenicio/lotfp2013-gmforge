@@ -33,42 +33,42 @@
 			"stats": {
 				"str":{
 					"name": "Strengh",
-					"current": 0,
+					"current": "3d6",
 					"min": 0,
 					"max": 20
 				},
 				"dex":{
 					"name": "Dexterity",
-					"current": 0,
+					"current": "3d6",
 					"min": 0,
 					"max": 20
 				},
 				"con":{
 					"name": "Constitution",
-					"current": 0,
+					"current": "3d6",
 					"min": 0,
 					"max": 20
 				},
 				"int":{
 					"name": "Intelligence",
-					"current": 0,
+					"current": "3d6",
 					"min": 0,
 					"max": 20
 				},
 				"wis":{
 					"name": "Wisdom",
-					"current": 0,
+					"current": "3d6",
 					"min": 0,
 					"max": 20
 				},
 				"cha":{
 					"name": "Charisma",
-					"current": 0,
+					"current": "3d6",
 					"min": 0,
 					"max": 20
 				}
 			},
-			"saves": {
+			"counters": {
 				"paralyze":{
 					"name": "Paralyze",
 					"current": 17,
@@ -98,7 +98,114 @@
 					"current": 17,
 					"min": 0,
 					"max": 20
-				}
+				},
+				"level": {
+				"name": "Level",
+				"current": 1,
+				"min": 0
+			},
+			"exp": {
+				"name": "Experience",
+				"current": 0,
+				"min": 0
+			},
+			"hp": {
+				"name": "Hit Points",
+				"current": 10,
+				"min": 0,
+				"max": 10
+			},
+			"speed": {
+				"name": "Speed",
+				"current": 30
+			},
+			"armor": {
+				"name": "Base Armor",
+				"current": 12
+			},
+			"ac": {
+				"name": "Armor",
+				"current": 0
+			},
+			"ab": {
+				"name": "Attack base",
+				"current": 1,
+				"min": 0
+			},
+			"hit": {
+				"name": "Hit Dice",
+				"current": "1d8"
+			},
+			"cp": {
+				"name": "CP",
+				"current": 0,
+				"min": 0
+			},
+			"sp": {
+				"name": "SP",
+				"current": 0,
+				"min": 0
+			},
+			"gp": {
+				"name": "GP",
+				"current": 0,
+				"min": 0
+			},
+			"1st": {
+				"name": "1st",
+				"current": 0,
+				"min": 0
+			},
+			"2nd": {
+				"name": "2nd",
+				"current": 0,
+				"min": 0
+			},
+			"3rd": {
+				"name": "3rd",
+				"current": 0,
+				"min": 0
+			},
+			"4th": {
+				"name": "4th",
+				"current": 0,
+				"min": 0
+			},
+			"5th": {
+				"name": "5th",
+				"current": 0,
+				"min": 0
+			},
+			"6th": {
+				"name": "6th",
+				"current": 0,
+				"min": 0
+			},
+			"7th": {
+				"name": "7th",
+				"current": 0,
+				"min": 0
+			},
+			"8th": {
+				"name": "8th",
+				"current": 0,
+				"min": 0
+			},
+			"9th": {
+				"name": "9th",
+				"current": 0,
+				"min": 0
+			},
+			"t1name": {},
+			"t1": {},
+			"t2name": {},
+			"t2": {},
+			"t3name": {},
+			"t3": {},
+			"spellAbility": {
+				"name": "Spellcasting Ability",
+				"current": 0
+			}
 			},
 			"skills": {
 				"architecture":{
@@ -284,9 +391,18 @@
 					"name": "Item Notes",
 					"current": ""
 				},
-				"number": {
-					"current": "0"
-				},
+				"damage": {
+					"name": "Damage"
+			},
+			"hit": {
+				"name": "+Hit Bonus"
+			},
+			"range": {
+				"name": "Range"
+			},
+			"ammo": {
+				"name": "Ammunition"
+			},
 				"weight": {
 					"current": "0"
 				}
@@ -484,6 +600,19 @@
 					]
 				}
 			}
+		}
+	},
+	"content": {
+		"Spells": {
+			"_t": "i",
+			"data": []
+		},
+		"Monster defaults": {
+			"_t": "c",
+			"data": []
+		},
+		"Character creation": {
+
 		}
 	},
 	"grid": {
