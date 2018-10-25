@@ -1,0 +1,28 @@
+{
+	"info": {
+		"name": {
+			"name": "Name",
+			"current": "LOTFP - Charged Items"
+		},
+		"img": {
+			"name": "Art",
+			"current": "/content/"
+		},
+		"notes": {
+			"name": "Notes",
+			"current": ""
+		},
+		"mode": {
+			"name": "Mode",
+			"current": ""
+		}
+	},
+	"custom": true,
+	"content": {
+		"ChargedItems": {
+			"_t": "i",
+			"data": [
+			]
+		}
+	}
+}
